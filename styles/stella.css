@@ -1,65 +1,111 @@
+.STELLA-messages {
+  position: absolute;
+  top: 20%;
+  left: 6%;
+  width: 76%;
+  padding: 5%;
+  background-color: rgba(34, 34, 34, 50%);
+  border: 3px solid #222222;
+  color: #EEEEEE;
+  border-radius: 10px;
+  z-index: 100;
+}
+
 .color-0 {
+  padding-top: 3%;
   background-color: #ed1c24;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
   transition-duration: 3s;
   vertical-align: top;
 }
 
 .color-1 {
+  padding-top: 3%;
   background-color: #f3703c;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
   transition-duration: 3s;
   vertical-align: top;
 }
 
 .color-2 {
+  padding-top: 3%;
   background-color: #f79338;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
   transition-duration: 3s;
   vertical-align: top;
 }
 
 .color-3 {
+  padding-top: 3%;
   background-color: #ffbf50;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
   transition-duration: 3s;
   vertical-align: top;
 }
 
 .color-4 {
+  padding-top: 3%;
   background-color: #fff300;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
   transition-duration: 3s;
   vertical-align: top;
 }
 
 .color-5 {
+  padding-top: 3%;
   background-color: #bfd730;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
   transition-duration: 3s;
   vertical-align: top;
 }
 
 .color-6 {
+  padding-top: 3%;
   background-color: #50b948;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
   transition-duration: 3s;
   vertical-align: top;
 }
 
 .color-7 {
+  padding-top: 3%;
   background-color: #009f8b;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
   transition-duration: 3s;
   vertical-align: top;
 }
 
 .color-8 {
+  padding-top: 3%;
   background-color: #0095d1;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
   transition-duration: 3s;
   vertical-align: top;
 }
 
 .color-9 {
+  padding-top: 3%;
   background-color: #5e6cb3;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
   transition-duration: 3s;
   vertical-align: top;
 }
 
 .color-10 {
+  padding-top: 3%;
   background-color: #892891;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
   transition-duration: 3s;
   vertical-align: top;
 }

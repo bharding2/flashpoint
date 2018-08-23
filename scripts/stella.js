@@ -1,10 +1,9 @@
-function launchStella(bodyEl, titleSections) {
+window.launchSTELLA = function(titleSections) {
   console.log('stella has entered the building');
-  bodyEl.classList.add('stella-body');
 
   titleSections.forEach((ele, idx) => {
     setTimeout(() => {
-      ele.classList.add(`color-${idx}`)
+      ele.classList.add(`color-${idx}`);
     }, idx * 50);
   });
 };

@@ -35,7 +35,8 @@ titleSections.forEach((section) => {
 
 function grantAccess(name) {
   console.log(`Access Granted for ${name}`);
-  if (name === 'STELLA') {
-    launchStella(bodyEl, titleSections);
+
+  if (window[`launch${name}`]) {
+    window[`launch${name}`](titleSections);
   }
 }

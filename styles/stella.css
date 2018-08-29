@@ -1,18 +1,26 @@
-.STELLA-messages {
+.STELLA-container {
   position: absolute;
-  top: 20%;
-  left: 6%;
-  width: 76%;
+  top: 20vh;
+  left: 3%;
+  width: 94%;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+}
+
+.STELLA-messages {
+  overflow: scroll;
+  width: 37%;
+  height: 50vh;
   padding: 5%;
   background-color: rgba(34, 34, 34, 50%);
   border: 3px solid #222222;
   color: #EEEEEE;
   border-radius: 10px;
-  z-index: 100;
 }
 
 .color-0 {
-  padding-top: 3%;
+  padding-top: 6vh;
   background-color: #ed1c24;
   color: #EEEEEE;
   text-shadow: 1px 1px #222222;
@@ -21,7 +29,7 @@
 }
 
 .color-1 {
-  padding-top: 3%;
+  padding-top: 6vh;
   background-color: #f3703c;
   color: #EEEEEE;
   text-shadow: 1px 1px #222222;
@@ -30,7 +38,7 @@
 }
 
 .color-2 {
-  padding-top: 3%;
+  padding-top: 6vh;
   background-color: #f79338;
   color: #EEEEEE;
   text-shadow: 1px 1px #222222;
@@ -39,7 +47,7 @@
 }
 
 .color-3 {
-  padding-top: 3%;
+  padding-top: 6vh;
   background-color: #ffbf50;
   color: #EEEEEE;
   text-shadow: 1px 1px #222222;
@@ -48,7 +56,7 @@
 }
 
 .color-4 {
-  padding-top: 3%;
+  padding-top: 6vh;
   background-color: #fff300;
   color: #EEEEEE;
   text-shadow: 1px 1px #222222;
@@ -57,7 +65,7 @@
 }
 
 .color-5 {
-  padding-top: 3%;
+  padding-top: 6vh;
   background-color: #bfd730;
   color: #EEEEEE;
   text-shadow: 1px 1px #222222;
@@ -66,7 +74,7 @@
 }
 
 .color-6 {
-  padding-top: 3%;
+  padding-top: 6vh;
   background-color: #50b948;
   color: #EEEEEE;
   text-shadow: 1px 1px #222222;
@@ -75,7 +83,7 @@
 }
 
 .color-7 {
-  padding-top: 3%;
+  padding-top: 6vh;
   background-color: #009f8b;
   color: #EEEEEE;
   text-shadow: 1px 1px #222222;
@@ -84,7 +92,7 @@
 }
 
 .color-8 {
-  padding-top: 3%;
+  padding-top: 6vh;
   background-color: #0095d1;
   color: #EEEEEE;
   text-shadow: 1px 1px #222222;
@@ -93,7 +101,7 @@
 }
 
 .color-9 {
-  padding-top: 3%;
+  padding-top: 6vh;
   background-color: #5e6cb3;
   color: #EEEEEE;
   text-shadow: 1px 1px #222222;
@@ -102,10 +110,21 @@
 }
 
 .color-10 {
-  padding-top: 3%;
+  padding-top: 6vh;
   background-color: #892891;
   color: #EEEEEE;
   text-shadow: 1px 1px #222222;
   transition-duration: 3s;
   vertical-align: top;
+}
+
+@media screen and (orientation: portrait) {
+  .STELLA-container {
+    flex-direction: column;
+  }
+
+  .STELLA-messages {
+    width: 86%;
+    height: 25vh;
+  }
 }

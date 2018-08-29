@@ -37,45 +37,6 @@ function grantAccess(name) {
   console.log(`Access Granted for ${name}`);
 
   if (window[`launch${name}`]) {
-    window[`launch${name}`](titleSections);
-
-    let messageEl = document.createElement('main');
-    messageEl.classList.add(`${name}-messages`);
-    bodyEl.appendChild(messageEl);
-
-    fetch('https://api.github.com/repos/bharding2/flashpointe/issues')
-      .then((response) => {
-        return response.json();
-      })
-      .then((issues) => {
-        let nameIssues = issues.filter((ele) => {
-          return ele.labels.some((label) => {
-            return label.name === name.toLowerCase();
-          });
-        });
-
-        nameIssues.forEach((issue) => {
-          createIssue(issue, messageEl);
-        });
-      });
+    window[`launch${name}`](name, titleSections, bodyEl);
   }
 }
-
-function createIssue(issue, parentEl) {
-  var articleEl = document.createElement('article');
-  articleEl.id = issue.number;
-
-  var titleEl = document.createElement('h2');
-  titleEl.textContent = issue.title;
-  articleEl.appendChild(titleEl);
-
-  var bylineEl = document.createElement('p');
-  bylineEl.textContent = `Posted by ${issue.user.login} at ${issue.created_at}`;
-  articleEl.appendChild(bylineEl);
-
-  var bodyEl = document.createElement('div');
-  bodyEl.innerHTML = issue.body;
-  articleEl.appendChild(bodyEl);
-
-  parentEl.appendChild(articleEl);
-};

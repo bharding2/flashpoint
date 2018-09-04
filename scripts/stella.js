@@ -3,7 +3,7 @@ window.launchSTELLA = function(name, titleSections, parentEl) {
 
   titleSections.forEach((ele, idx) => {
     setTimeout(() => {
-      ele.classList.add(`color-${idx}`);
+      ele.className = `color-${idx}`;
     }, idx * 50);
   });
 

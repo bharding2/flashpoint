@@ -1,0 +1,38 @@
+.NOAH-container {
+  position: absolute;
+  top: 20vh;
+  left: 3%;
+  width: 94%;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+}
+
+.NOAH-messages {
+  overflow: scroll;
+  width: 37%;
+  height: 50vh;
+  padding: 5%;
+  background-color: rgba(34, 34, 34, 50%);
+  border: 3px solid #222222;
+  color: #EEEEEE;
+  border-radius: 10px;
+}
+
+.noah-color-0 {
+  padding-top: 6vh;
+  background-color: #00303F;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
+  transition-duration: 3s;
+  vertical-align: top;
+}
+
+.noah-color-1 {
+  padding-top: 6vh;
+  background-color: #654700;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
+  transition-duration: 3s;
+  vertical-align: top;
+}

@@ -1,4 +1,10 @@
 window.createMessages = function(name, parentEl) {
+  let oldContainerEls = parentEl.querySelectorAll('main');
+
+  oldContainerEls.forEach((currentEl) => {
+    parentEl.removeChild(currentEl);
+  });
+
   let containerEl = document.createElement('main');
   containerEl.classList.add(`${name}-container`);
   parentEl.appendChild(containerEl);

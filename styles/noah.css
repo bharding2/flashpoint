@@ -36,3 +36,14 @@
   transition-duration: 3s;
   vertical-align: top;
 }
+
+@media screen and (orientation: portrait) {
+  .NOAH-container {
+    flex-direction: column;
+  }
+
+  .NOAH-messages {
+    width: 86%;
+    height: 25vh;
+  }
+}

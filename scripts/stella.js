@@ -10,6 +10,6 @@ window.launchSTELLA = function(name, titleSections, parentEl) {
   window.createMessages(name, parentEl);
 };
 
-function createCanvas(parentEl) {
+// function createCanvas(parentEl) {
 
-}
+// }

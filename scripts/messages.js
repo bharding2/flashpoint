@@ -1,17 +1,7 @@
 window.createMessages = function(name, parentEl) {
-  let oldContainerEls = parentEl.querySelectorAll('main');
-
-  oldContainerEls.forEach((currentEl) => {
-    parentEl.removeChild(currentEl);
-  });
-
-  let containerEl = document.createElement('main');
-  containerEl.classList.add(`${name}-container`);
-  parentEl.appendChild(containerEl);
-
   let messagesEl = document.createElement('aside');
   messagesEl.classList.add(`${name}-messages`);
-  containerEl.appendChild(messagesEl);
+  parentEl.appendChild(messagesEl);
 
   fetch('https://api.github.com/repos/bharding2/flashpointe/issues')
     .then((response) => {

@@ -47,4 +47,4 @@ window.createMessages = function(name, parentEl) {
   
     parentEl.appendChild(articleEl);
   }
-}
+};

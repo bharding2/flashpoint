@@ -11,12 +11,33 @@
 .NOAH-messages {
   overflow: scroll;
   width: 37%;
-  height: 50vh;
+  height: 45vh;
+  margin-right: 3vw;
   padding: 5%;
   background-color: rgba(34, 34, 34, 50%);
   border: 3px solid #222222;
   color: #EEEEEE;
   border-radius: 10px;
+}
+
+.NOAH-canvas {
+  overflow: scroll;
+  width: 37%;
+  height: 45vh;
+  padding: 5%;
+  background-color: rgba(34, 34, 34, 50%);
+  border: 3px solid #222222;
+  color: #EEEEEE;
+  border-radius: 10px;
+}
+
+.extended {
+  width: 88%;
+  margin-right: 0vw;
+}
+
+.none {
+  display: none;
 }
 
 .noah-color-0 {
@@ -45,5 +66,17 @@
   .NOAH-messages {
     width: 86%;
     height: 25vh;
+    margin-bottom: 3vh;
+  }
+  
+  .NOAH-canvas {
+    width: 86%;
+    height: 25vh;
+    margin-left: 0vh;
+  }
+
+  .extended {
+    height: 60vh;
+    margin-bottom: 0vh;
   }
 }

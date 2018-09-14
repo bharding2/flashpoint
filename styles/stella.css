@@ -1,18 +1,20 @@
 .STELLA-container {
   position: absolute;
   top: 20vh;
-  left: 3%;
-  width: 94%;
+  left: 0;
+  width: 100%;
+  height: 80vh;
   z-index: 100;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .STELLA-messages {
   overflow: scroll;
-  width: 37%;
+  width: 34%;
   height: 45vh;
-  margin-right: 3vw;
   padding: 5%;
   background-color: rgba(34, 34, 34, 50%);
   border: 3px solid #222222;
@@ -22,7 +24,7 @@
 
 .STELLA-canvas {
   overflow: scroll;
-  width: 37%;
+  width: 34%;
   height: 45vh;
   padding: 5%;
   background-color: rgba(34, 34, 34, 50%);
@@ -32,8 +34,7 @@
 }
 
 .extended {
-  width: 88%;
-  margin-right: 0vw;
+  width: 84%;
 }
 
 .none {
@@ -145,19 +146,16 @@
   }
 
   .STELLA-messages {
-    width: 86%;
-    height: 25vh;
-    margin-bottom: 3vh;
+    width: 84%;
+    height: 24vh;
   }
   
   .STELLA-canvas {
-    width: 86%;
-    height: 25vh;
-    margin-left: 0vh;
+    width: 84%;
+    height: 24vh;
   }
 
   .extended {
-    height: 60vh;
-    margin-bottom: 0vh;
+    height: 64vh;
   }
 }

@@ -1,6 +1,6 @@
 window.createMessages = function(name, parentEl) {
   let messagesEl = document.createElement('aside');
-  messagesEl.classList.add(`${name}-messages`);
+  messagesEl.classList.add('messages');
   parentEl.appendChild(messagesEl);
 
   fetch('https://api.github.com/repos/bharding2/flashpointe/issues')
@@ -28,7 +28,7 @@ window.createMessages = function(name, parentEl) {
     articleEl.appendChild(titleEl);
   
     var bylineEl = document.createElement('p');
-    bylineEl.textContent = `Posted by ${issue.user.login} at ${issue.created_at}`;
+    bylineEl.textContent = `Posted by ${issue.user.login} on ${issue.created_at.split('T')[0]}`;
     articleEl.appendChild(bylineEl);
   
     var messageBodyEl = document.createElement('div');

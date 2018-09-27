@@ -1,44 +1,11 @@
 window.launchSTELLA = function(name, titleSections, parentEl) {
-  console.log('stella has entered the building');
+  console.log(`${name} has entered the building`);
 
   titleSections.forEach((ele, idx) => {
     setTimeout(() => {
-      ele.className = `color-${idx}`;
+      ele.className = `${name}-color-${idx}`;
     }, idx * 50);
   });
 
-  let oldContainerEls = parentEl.querySelectorAll('main');
-
-  oldContainerEls.forEach((currentEl) => {
-    parentEl.removeChild(currentEl);
-  });
-
-  let containerEl = document.createElement('main');
-  containerEl.classList.add(`${name}-container`);
-  parentEl.appendChild(containerEl);
-
-  window.createMessages(name, containerEl);
-  createCanvas(name, containerEl);
-
-  let asideEls = document.querySelectorAll('aside');
-
-  asideEls.forEach((asideEl) => {
-    let asideOuterClass = asideEl.className.split(' ')[0];
-
-    asideEl.addEventListener('click', (event) => {
-      asideEls.forEach((eventEl) => {
-        if (eventEl.classList.contains('none')) return eventEl.classList.remove('none');
-        if (eventEl.classList.contains('extended')) return eventEl.classList.remove('extended');
-        if (eventEl.classList.contains(asideOuterClass)) return eventEl.classList.add('extended');
-        eventEl.classList.add('none');
-      });
-    });
-  });
+  window.createContainers(name, parentEl);
 };
-
-function createCanvas(name, parentEl) {
-  let asideEl = document.createElement('aside');
-  asideEl.classList.add(`${name}-canvas`);
-
-  parentEl.appendChild(asideEl);
-}

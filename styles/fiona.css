@@ -1,0 +1,17 @@
+.FIONA-color-0 {
+  padding-top: 6vh;
+  background-color: #551A8B;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
+  transition-duration: 3s;
+  vertical-align: top;
+}
+
+.FIONA-color-1 {
+  padding-top: 6vh;
+  background-color: #8253AD;
+  color: #EEEEEE;
+  text-shadow: 1px 1px #222222;
+  transition-duration: 3s;
+  vertical-align: top;
+}

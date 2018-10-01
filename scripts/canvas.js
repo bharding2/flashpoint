@@ -10,88 +10,84 @@ window.createCanvas = function (name, parentEl) {
 
       let keys = {
         9: { // tab
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         }, 
+        // 1
         81: { // q
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         },
+        // 2
         87: { // w
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         },
         69: { // e
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         },
+        // 4
         82: { // r
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         },
+        // 5
         84: { // t
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         },
+        // 6
         89: { // y
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         },
         85: { // u
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         },
+        // 8
         73: { // i
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         },
+        // 9
         79: { // o
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         },
         80: { // p
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         },
+        // -
         219: { // [
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         },
+        // =
         221: { // ]
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         },
+        // delete
         220: { // \
-          row: 'bottom',
           src: '',
           note: '',
-          color: '',
+          color: 'white',
         }
       };
 

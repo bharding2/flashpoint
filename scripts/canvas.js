@@ -14,13 +14,21 @@ window.createCanvas = function (name, parentEl) {
           note: '',
           color: 'white',
         }, 
-        // 1
+        49: { // 1
+          src: '',
+          note: '',
+          color: 'black',
+        },
         81: { // q
           src: '',
           note: '',
           color: 'white',
         },
-        // 2
+        50: { // 2
+          src: '',
+          note: '',
+          color: 'black',
+        },
         87: { // w
           src: '',
           note: '',
@@ -31,19 +39,31 @@ window.createCanvas = function (name, parentEl) {
           note: '',
           color: 'white',
         },
-        // 4
+        52: { // 4
+          src: '',
+          note: '',
+          color: 'black',
+        },
         82: { // r
           src: '',
           note: '',
           color: 'white',
         },
-        // 5
+        53: { // 5
+          src: '',
+          note: '',
+          color: 'black',
+        },
         84: { // t
           src: '',
           note: '',
           color: 'white',
         },
-        // 6
+        54: { // 6
+          src: '',
+          note: '',
+          color: 'black',
+        },
         89: { // y
           src: '',
           note: '',
@@ -54,13 +74,21 @@ window.createCanvas = function (name, parentEl) {
           note: '',
           color: 'white',
         },
-        // 8
+        56: { // 8
+          src: '',
+          note: '',
+          color: 'black',
+        },
         73: { // i
           src: '',
           note: '',
           color: 'white',
         },
-        // 9
+        57: { // 9
+          src: '',
+          note: '',
+          color: 'black',
+        },
         79: { // o
           src: '',
           note: '',
@@ -71,19 +99,31 @@ window.createCanvas = function (name, parentEl) {
           note: '',
           color: 'white',
         },
-        // -
+        189: { // -
+          src: '',
+          note: '',
+          color: 'black',
+        },
         219: { // [
           src: '',
           note: '',
           color: 'white',
         },
-        // =
+        187: { // =
+          src: '',
+          note: '',
+          color: 'black',
+        },
         221: { // ]
           src: '',
           note: '',
           color: 'white',
         },
-        // delete
+        8: { // delete (backspace)
+          src: '',
+          note: '',
+          color: 'black',
+        },
         220: { // \
           src: '',
           note: '',

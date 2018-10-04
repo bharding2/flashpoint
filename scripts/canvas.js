@@ -131,6 +131,105 @@ window.createCanvas = function (name, parentEl) {
         }
       };
 
+      let topRow = [
+        {
+          key: keys[9],
+          size: 'end'
+        },
+        {
+          key: keys[49],
+          size: 'black-key'
+        },
+        {
+          key: keys[81],
+          size: 'mid'
+        },
+        {
+          key: keys[50],
+          size: 'black-key'
+        },
+        {
+          key: keys[87],
+          size: 'end'
+        },
+        {
+          key: keys[69],
+          size: 'end'
+        },
+        {
+          key: keys[52],
+          size: 'black-key'
+        },
+        {
+          key: keys[82],
+          size: 'mid'
+        },
+        {
+          key: keys[53],
+          size: 'black-key'
+        },
+        {
+          key: keys[84],
+          size: 'mid'
+        },
+        {
+          key: keys[54],
+          size: 'black-key'
+        },
+        {
+          key: keys[89],
+          size: 'end'
+        },
+        {
+          key: keys[85],
+          size: 'end'
+        },
+        {
+          key: keys[56],
+          size: 'black-key'
+        },
+        {
+          key: keys[73],
+          size: 'mid'
+        },
+        {
+          key: keys[57],
+          size: 'black-key'
+        },
+        {
+          key: keys[79],
+          size: 'end'
+        },
+        {
+          key: keys[80],
+          size: 'end'
+        },
+        {
+          key: keys[189],
+          size: 'black-key'
+        },
+        {
+          key: keys[219],
+          size: 'mid'
+        },
+        {
+          key: keys[187],
+          size: 'black-key'
+        },
+        {
+          key: keys[221],
+          size: 'mid'
+        },
+        {
+          key: keys[8],
+          size: 'black-key'
+        },
+        {
+          key: keys[220],
+          size: 'end'
+        }
+      ];
+
       canvasEl.appendChild(pianoEl);
     },
     NOAH: function(canvasEl) {

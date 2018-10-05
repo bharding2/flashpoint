@@ -230,6 +230,65 @@ window.createCanvas = function (name, parentEl) {
         }
       ];
 
+      let bottomRow = [
+        {
+          key: keys[9],
+          size: 'white-key'
+        },
+        {
+          key: keys[81],
+          size: 'white-key'
+        },
+        {
+          key: keys[87],
+          size: 'white-key'
+        },
+        {
+          key: keys[69],
+          size: 'white-key'
+        },
+        {
+          key: keys[82],
+          size: 'white-key'
+        },
+        {
+          key: keys[84],
+          size: 'white-key'
+        },
+        {
+          key: keys[89],
+          size: 'white-key'
+        },
+        {
+          key: keys[85],
+          size: 'white-key'
+        },
+        {
+          key: keys[73],
+          size: 'white-key'
+        },
+        {
+          key: keys[79],
+          size: 'white-key'
+        },
+        {
+          key: keys[80],
+          size: 'white-key'
+        },
+        {
+          key: keys[219],
+          size: 'white-key'
+        },
+        {
+          key: keys[221],
+          size: 'white-key'
+        },
+        {
+          key: keys[220],
+          size: 'white-key'
+        }
+      ];
+
       canvasEl.appendChild(pianoEl);
     },
     NOAH: function(canvasEl) {

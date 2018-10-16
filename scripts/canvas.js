@@ -10,123 +10,99 @@ window.createCanvas = function (name, parentEl) {
 
       let keys = {
         9: { // tab
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/middle_c.mp3'),
           color: 'white',
         }, 
         49: { // 1
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/mid_c_sharp.mp3'),
           color: 'black',
         },
         81: { // q
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/middle_d.mp3'),
           color: 'white',
         },
         50: { // 2
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/mid_d_sharp.mp3'),
           color: 'black',
         },
         87: { // w
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/middle_e.mp3'),
           color: 'white',
         },
         69: { // e
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/middle_f.mp3'),
           color: 'white',
         },
         52: { // 4
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/mid_f_sharp.mp3'),
           color: 'black',
         },
         82: { // r
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/middle_g.mp3'),
           color: 'white',
         },
         53: { // 5
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/mid_g_sharp.mp3'),
           color: 'black',
         },
         84: { // t
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/middle_a.mp3'),
           color: 'white',
         },
         54: { // 6
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/mid_a_sharp.mp3'),
           color: 'black',
         },
         89: { // y
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/middle_b.mp3'),
           color: 'white',
         },
         85: { // u
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/high_c.mp3'),
           color: 'white',
         },
         56: { // 8
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/high_c_sharp.mp3'),
           color: 'black',
         },
         73: { // i
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/high_d.mp3'),
           color: 'white',
         },
         57: { // 9
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/high_d_sharp.mp3'),
           color: 'black',
         },
         79: { // o
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/high_e.mp3'),
           color: 'white',
         },
         80: { // p
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/high_f.mp3'),
           color: 'white',
         },
         189: { // -
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/high_f_sharp.mp3'),
           color: 'black',
         },
         219: { // [
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/high_g.mp3'),
           color: 'white',
         },
         187: { // =
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/high_g_sharp.mp3'),
           color: 'black',
         },
         221: { // ]
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/high_a.mp3'),
           color: 'white',
         },
         8: { // delete (backspace)
-          src: '',
-          note: '',
+          note: new Audio('./assets/piano/high_a_sharp.mp3'),
           color: 'black',
         },
-        220: { // \
-          src: '',
-          note: '',
+        220: { // 
+          note: new Audio('./assets/piano/high_b.mp3'),
           color: 'white',
         }
       };

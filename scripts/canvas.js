@@ -9,99 +9,99 @@ window.createCanvas = function (name, parentEl) {
       pianoEl.classList.add('piano');
 
       let keys = {
-        9: { // tab
+        'Tab': { // tab
           note: new Audio('./assets/piano/middle_c.mp3'),
           color: 'white',
         }, 
-        49: { // 1
+        'Digit1': { // 1
           note: new Audio('./assets/piano/mid_c_sharp.mp3'),
           color: 'black',
         },
-        81: { // q
+        'KeyQ': { // q
           note: new Audio('./assets/piano/middle_d.mp3'),
           color: 'white',
         },
-        50: { // 2
+        'Digit2': { // 2
           note: new Audio('./assets/piano/mid_d_sharp.mp3'),
           color: 'black',
         },
-        87: { // w
+        'KeyW': { // w
           note: new Audio('./assets/piano/middle_e.mp3'),
           color: 'white',
         },
-        69: { // e
+        'KeyE': { // e
           note: new Audio('./assets/piano/middle_f.mp3'),
           color: 'white',
         },
-        52: { // 4
+        'Digit4': { // 4
           note: new Audio('./assets/piano/mid_f_sharp.mp3'),
           color: 'black',
         },
-        82: { // r
+        'KeyR': { // r
           note: new Audio('./assets/piano/middle_g.mp3'),
           color: 'white',
         },
-        53: { // 5
+        'Digit5': { // 5
           note: new Audio('./assets/piano/mid_g_sharp.mp3'),
           color: 'black',
         },
-        84: { // t
+        'KeyT': { // t
           note: new Audio('./assets/piano/middle_a.mp3'),
           color: 'white',
         },
-        54: { // 6
+        'Digit6': { // 6
           note: new Audio('./assets/piano/mid_a_sharp.mp3'),
           color: 'black',
         },
-        89: { // y
+        'KeyY': { // y
           note: new Audio('./assets/piano/middle_b.mp3'),
           color: 'white',
         },
-        85: { // u
+        'KeyU': { // u
           note: new Audio('./assets/piano/high_c.mp3'),
           color: 'white',
         },
-        56: { // 8
+        'Digit8': { // 8
           note: new Audio('./assets/piano/high_c_sharp.mp3'),
           color: 'black',
         },
-        73: { // i
+        'KeyI': { // i
           note: new Audio('./assets/piano/high_d.mp3'),
           color: 'white',
         },
-        57: { // 9
+        'Digit9': { // 9
           note: new Audio('./assets/piano/high_d_sharp.mp3'),
           color: 'black',
         },
-        79: { // o
+        'KeyO': { // o
           note: new Audio('./assets/piano/high_e.mp3'),
           color: 'white',
         },
-        80: { // p
+        'KeyP': { // p
           note: new Audio('./assets/piano/high_f.mp3'),
           color: 'white',
         },
-        189: { // -
+        'Minus': { // -
           note: new Audio('./assets/piano/high_f_sharp.mp3'),
           color: 'black',
         },
-        219: { // [
+        'BracketLeft': { // [
           note: new Audio('./assets/piano/high_g.mp3'),
           color: 'white',
         },
-        187: { // =
+        'Equal': { // =
           note: new Audio('./assets/piano/high_g_sharp.mp3'),
           color: 'black',
         },
-        221: { // ]
+        'BracketRight': { // ]
           note: new Audio('./assets/piano/high_a.mp3'),
           color: 'white',
         },
-        8: { // delete (backspace)
+        'Backspace': { // delete (backspace)
           note: new Audio('./assets/piano/high_a_sharp.mp3'),
           color: 'black',
         },
-        220: { // 
+        'Backslash': { // \
           note: new Audio('./assets/piano/high_b.mp3'),
           color: 'white',
         }
@@ -109,168 +109,168 @@ window.createCanvas = function (name, parentEl) {
 
       let topRow = [
         {
-          key: keys[9],
+          key: keys['Tab'],
           size: 'end'
         },
         {
-          key: keys[49],
+          key: keys['Digit1'],
           size: 'black-key'
         },
         {
-          key: keys[81],
+          key: keys['KeyQ'],
           size: 'mid'
         },
         {
-          key: keys[50],
+          key: keys['Digit2'],
           size: 'black-key'
         },
         {
-          key: keys[87],
+          key: keys['KeyW'],
           size: 'end'
         },
         {
-          key: keys[69],
+          key: keys['KeyE'],
           size: 'end'
         },
         {
-          key: keys[52],
+          key: keys['Digit4'],
           size: 'black-key'
         },
         {
-          key: keys[82],
+          key: keys['KeyR'],
           size: 'mid'
         },
         {
-          key: keys[53],
+          key: keys['Digit5'],
           size: 'black-key'
         },
         {
-          key: keys[84],
+          key: keys['KeyT'],
           size: 'mid'
         },
         {
-          key: keys[54],
+          key: keys['Digit6'],
           size: 'black-key'
         },
         {
-          key: keys[89],
+          key: keys['KeyY'],
           size: 'end'
         },
         {
-          key: keys[85],
+          key: keys['KeyU'],
           size: 'end'
         },
         {
-          key: keys[56],
+          key: keys['Digit8'],
           size: 'black-key'
         },
         {
-          key: keys[73],
+          key: keys['KeyI'],
           size: 'mid'
         },
         {
-          key: keys[57],
+          key: keys['Digit9'],
           size: 'black-key'
         },
         {
-          key: keys[79],
+          key: keys['KeyO'],
           size: 'end'
         },
         {
-          key: keys[80],
+          key: keys['KeyP'],
           size: 'end'
         },
         {
-          key: keys[189],
+          key: keys['Minus'],
           size: 'black-key'
         },
         {
-          key: keys[219],
+          key: keys['BracketLeft'],
           size: 'mid'
         },
         {
-          key: keys[187],
+          key: keys['Equal'],
           size: 'black-key'
         },
         {
-          key: keys[221],
+          key: keys['BracketRight'],
           size: 'mid'
         },
         {
-          key: keys[8],
+          key: keys['Backspace'],
           size: 'black-key'
         },
         {
-          key: keys[220],
+          key: keys['Backslash'],
           size: 'end'
         }
       ];
 
       let bottomRow = [
         {
-          key: keys[9],
+          key: keys['Tab'],
           size: 'white-key'
         },
         {
-          key: keys[81],
+          key: keys['KeyQ'],
           size: 'white-key'
         },
         {
-          key: keys[87],
+          key: keys['KeyW'],
           size: 'white-key'
         },
         {
-          key: keys[69],
+          key: keys['KeyE'],
           size: 'white-key'
         },
         {
-          key: keys[82],
+          key: keys['KeyR'],
           size: 'white-key'
         },
         {
-          key: keys[84],
+          key: keys['KeyT'],
           size: 'white-key'
         },
         {
-          key: keys[89],
+          key: keys['KeyY'],
           size: 'white-key'
         },
         {
-          key: keys[85],
+          key: keys['KeyU'],
           size: 'white-key'
         },
         {
-          key: keys[73],
+          key: keys['KeyI'],
           size: 'white-key'
         },
         {
-          key: keys[79],
+          key: keys['KeyO'],
           size: 'white-key'
         },
         {
-          key: keys[80],
+          key: keys['KeyP'],
           size: 'white-key'
         },
         {
-          key: keys[219],
+          key: keys['BracketLeft'],
           size: 'white-key'
         },
         {
-          key: keys[221],
+          key: keys['BracketRight'],
           size: 'white-key'
         },
         {
-          key: keys[220],
+          key: keys['Backslash'],
           size: 'white-key'
         }
       ];
 
       document.addEventListener('keydown', (event) => {
-        if (keys[event.which]) {
+        if (keys[event.code]) {
           event.preventDefault();
 
-          keys[event.which].note.currentTime = 0;
-          keys[event.which].note.play();
+          keys[event.code].note.currentTime = 0;
+          keys[event.code].note.play();
         }
       });
 

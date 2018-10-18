@@ -292,6 +292,14 @@ window.createCanvas = function (name, parentEl) {
         'Backslash',
       ];
 
+      keyboard.forEach((key) => {
+        let keyEl = document.createElement('div');
+        keyEl.classList.add(keys[key].color);
+        keyEl.setAttribute('data-key', key);
+
+        pianoEl.appendChild(keyEl);
+      });
+
       document.addEventListener('keydown', (event) => {
         if (keys[event.code]) {
           event.preventDefault();

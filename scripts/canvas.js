@@ -265,6 +265,15 @@ window.createCanvas = function (name, parentEl) {
         }
       ];
 
+      document.addEventListener('keydown', (event) => {
+        if (keys[event.which]) {
+          event.preventDefault();
+
+          keys[event.which].note.currentTime = 0;
+          keys[event.which].note.play();
+        }
+      });
+
       canvasEl.appendChild(pianoEl);
     },
     NOAH: function(canvasEl) {

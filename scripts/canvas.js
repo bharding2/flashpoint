@@ -107,162 +107,189 @@ window.createCanvas = function (name, parentEl) {
         }
       };
 
-      let topRow = [
-        {
-          key: keys['Tab'],
-          size: 'end'
-        },
-        {
-          key: keys['Digit1'],
-          size: 'black-key'
-        },
-        {
-          key: keys['KeyQ'],
-          size: 'mid'
-        },
-        {
-          key: keys['Digit2'],
-          size: 'black-key'
-        },
-        {
-          key: keys['KeyW'],
-          size: 'end'
-        },
-        {
-          key: keys['KeyE'],
-          size: 'end'
-        },
-        {
-          key: keys['Digit4'],
-          size: 'black-key'
-        },
-        {
-          key: keys['KeyR'],
-          size: 'mid'
-        },
-        {
-          key: keys['Digit5'],
-          size: 'black-key'
-        },
-        {
-          key: keys['KeyT'],
-          size: 'mid'
-        },
-        {
-          key: keys['Digit6'],
-          size: 'black-key'
-        },
-        {
-          key: keys['KeyY'],
-          size: 'end'
-        },
-        {
-          key: keys['KeyU'],
-          size: 'end'
-        },
-        {
-          key: keys['Digit8'],
-          size: 'black-key'
-        },
-        {
-          key: keys['KeyI'],
-          size: 'mid'
-        },
-        {
-          key: keys['Digit9'],
-          size: 'black-key'
-        },
-        {
-          key: keys['KeyO'],
-          size: 'end'
-        },
-        {
-          key: keys['KeyP'],
-          size: 'end'
-        },
-        {
-          key: keys['Minus'],
-          size: 'black-key'
-        },
-        {
-          key: keys['BracketLeft'],
-          size: 'mid'
-        },
-        {
-          key: keys['Equal'],
-          size: 'black-key'
-        },
-        {
-          key: keys['BracketRight'],
-          size: 'mid'
-        },
-        {
-          key: keys['Backspace'],
-          size: 'black-key'
-        },
-        {
-          key: keys['Backslash'],
-          size: 'end'
-        }
-      ];
+      // let topRow = [
+      //   {
+      //     key: keys['Tab'],
+      //     size: 'end'
+      //   },
+      //   {
+      //     key: keys['Digit1'],
+      //     size: 'black-key'
+      //   },
+      //   {
+      //     key: keys['KeyQ'],
+      //     size: 'mid'
+      //   },
+      //   {
+      //     key: keys['Digit2'],
+      //     size: 'black-key'
+      //   },
+      //   {
+      //     key: keys['KeyW'],
+      //     size: 'end'
+      //   },
+      //   {
+      //     key: keys['KeyE'],
+      //     size: 'end'
+      //   },
+      //   {
+      //     key: keys['Digit4'],
+      //     size: 'black-key'
+      //   },
+      //   {
+      //     key: keys['KeyR'],
+      //     size: 'mid'
+      //   },
+      //   {
+      //     key: keys['Digit5'],
+      //     size: 'black-key'
+      //   },
+      //   {
+      //     key: keys['KeyT'],
+      //     size: 'mid'
+      //   },
+      //   {
+      //     key: keys['Digit6'],
+      //     size: 'black-key'
+      //   },
+      //   {
+      //     key: keys['KeyY'],
+      //     size: 'end'
+      //   },
+      //   {
+      //     key: keys['KeyU'],
+      //     size: 'end'
+      //   },
+      //   {
+      //     key: keys['Digit8'],
+      //     size: 'black-key'
+      //   },
+      //   {
+      //     key: keys['KeyI'],
+      //     size: 'mid'
+      //   },
+      //   {
+      //     key: keys['Digit9'],
+      //     size: 'black-key'
+      //   },
+      //   {
+      //     key: keys['KeyO'],
+      //     size: 'end'
+      //   },
+      //   {
+      //     key: keys['KeyP'],
+      //     size: 'end'
+      //   },
+      //   {
+      //     key: keys['Minus'],
+      //     size: 'black-key'
+      //   },
+      //   {
+      //     key: keys['BracketLeft'],
+      //     size: 'mid'
+      //   },
+      //   {
+      //     key: keys['Equal'],
+      //     size: 'black-key'
+      //   },
+      //   {
+      //     key: keys['BracketRight'],
+      //     size: 'mid'
+      //   },
+      //   {
+      //     key: keys['Backspace'],
+      //     size: 'black-key'
+      //   },
+      //   {
+      //     key: keys['Backslash'],
+      //     size: 'end'
+      //   }
+      // ];
 
-      let bottomRow = [
-        {
-          key: keys['Tab'],
-          size: 'white-key'
-        },
-        {
-          key: keys['KeyQ'],
-          size: 'white-key'
-        },
-        {
-          key: keys['KeyW'],
-          size: 'white-key'
-        },
-        {
-          key: keys['KeyE'],
-          size: 'white-key'
-        },
-        {
-          key: keys['KeyR'],
-          size: 'white-key'
-        },
-        {
-          key: keys['KeyT'],
-          size: 'white-key'
-        },
-        {
-          key: keys['KeyY'],
-          size: 'white-key'
-        },
-        {
-          key: keys['KeyU'],
-          size: 'white-key'
-        },
-        {
-          key: keys['KeyI'],
-          size: 'white-key'
-        },
-        {
-          key: keys['KeyO'],
-          size: 'white-key'
-        },
-        {
-          key: keys['KeyP'],
-          size: 'white-key'
-        },
-        {
-          key: keys['BracketLeft'],
-          size: 'white-key'
-        },
-        {
-          key: keys['BracketRight'],
-          size: 'white-key'
-        },
-        {
-          key: keys['Backslash'],
-          size: 'white-key'
-        }
+      // let bottomRow = [
+      //   {
+      //     key: keys['Tab'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['KeyQ'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['KeyW'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['KeyE'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['KeyR'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['KeyT'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['KeyY'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['KeyU'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['KeyI'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['KeyO'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['KeyP'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['BracketLeft'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['BracketRight'],
+      //     size: 'white-key'
+      //   },
+      //   {
+      //     key: keys['Backslash'],
+      //     size: 'white-key'
+      //   }
+      // ];
+
+      let keyboard = [
+        'Tab',
+        'Digit1',
+        'KeyQ',
+        'Digit2',
+        'KeyW',
+        'KeyE',
+        'Digit4',
+        'KeyR',
+        'Digit5',
+        'KeyT',
+        'Digit6',
+        'KeyY',
+        'KeyU',
+        'Digit8',
+        'KeyI',
+        'Digit9',
+        'KeyO',
+        'KeyP',
+        'Minus',
+        'BracketLeft',
+        'Equal',
+        'BracketRight',
+        'Backspace',
+        'Backslash',
       ];
 
       document.addEventListener('keydown', (event) => {

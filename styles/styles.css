@@ -11,8 +11,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: #222222;
   background-color: #EEEEEE;
-  font-size: calc(16px + 0.7vmax);
-  line-height: calc(1.1em + 0.7vmax);
+  font-size: calc(12px + 0.5vw);
+  line-height: calc(1.1em + 0.5vw);
 }
 
 section {

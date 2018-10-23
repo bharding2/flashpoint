@@ -106,7 +106,7 @@ window.createCanvas = function (name, parentEl) {
           color: 'white',
         }
       };
-      
+
       let keyboard = [
         'Tab',
         'Digit1',
@@ -148,6 +148,14 @@ window.createCanvas = function (name, parentEl) {
 
           keys[event.code].note.currentTime = 0;
           keys[event.code].note.play();
+
+          let keyEl = document.querySelector(`[data-key="${event.code}"]`);
+
+          keyEl.classList.add('active');
+
+          setTimeout(() => {
+            keyEl.classList.remove('active');
+          }, 500);
         }
       });
 
@@ -159,6 +167,12 @@ window.createCanvas = function (name, parentEl) {
 
           keys[event.target.dataset.key].note.currentTime = 0;
           keys[event.target.dataset.key].note.play();
+
+          event.target.classList.add('active');
+
+          setTimeout(() => {
+            event.target.classList.remove('active');
+          }, 500);
         }
       });
 

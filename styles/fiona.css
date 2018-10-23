@@ -40,5 +40,10 @@
   height: 70%;
   width: 5%;
   margin: 0 -2.5%;
+  outline: 1px solid black;
   z-index: 999;
+}
+
+.active {
+  background-color: yellow;
 }

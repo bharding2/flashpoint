@@ -178,21 +178,24 @@ window.createCanvas = function (name, parentEl) {
 
       canvasEl.appendChild(pianoEl);
     },
-    NOAH: function(canvasEl) {
-      // rotating cube
-      let cubeEl = document.createElement('figure');
-      cubeEl.classList.add('cube');
+    // NOAH: function(canvasEl) {
+    //   // rotating cube
+    //   let cubeEl = document.createElement('figure');
+    //   cubeEl.classList.add('cube');
 
-      canvasEl.appendChild(cubeEl);
-    },
-    STELLA: function(canvasEl) {
-      // paint
-      let paintEl = document.createElement('figure');
-      paintEl.classList.add('paint');
+    //   canvasEl.appendChild(cubeEl);
+    // },
+    // STELLA: function(canvasEl) {
+    //   // paint
+    //   let paintEl = document.createElement('figure');
+    //   paintEl.classList.add('paint');
 
-      canvasEl.appendChild(paintEl);
-    }
+    //   canvasEl.appendChild(paintEl);
+    // }
   };
+
+  personalCanvas.NOAH = personalCanvas.FIONA;
+  personalCanvas.STELLA = personalCanvas.FIONA;
 
   if (personalCanvas[name]) personalCanvas[name](asideEl);
 

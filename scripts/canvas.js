@@ -185,7 +185,7 @@ window.createCanvas = function (name, parentEl) {
       //   }
       // });
 
-      function keydownListener(event) {
+      document.addEventListener('keydown', (event) => {
         let key = keys[event.code];
         let keyEl = document.querySelector(`[data-key="${event.code}"]`);
 
@@ -196,9 +196,7 @@ window.createCanvas = function (name, parentEl) {
 
           keyEl.classList.add('active');
         }
-      }
-
-      document.addEventListener('keydown', keydownListener);
+      });
 
       document.addEventListener('keyup', (event) => {
         event.stopPropagation();
